@@ -1,7 +1,7 @@
 
 # hausgemachtSpotiPy
 
-**hausgemachtspotipy** is a Python package that access music artists, albums, and tracks, directly from the Spotify Data Catalogue via Spotify Web API endpoints.
+**hausgemachtspotipy** is a Python package that access music artists, albums, and tracks, directly from the Spotify Data Catalogue via Spotify Web API endpoints .
 
 Inspired by the [SpotiPy](https://pypi.org/project/spotipy/) Python package, the **hausgemachtspotipy** package focuses on easily querying music artists, albums, and tracks from Spotify.
 
@@ -83,7 +83,7 @@ df_albums = pd.json_normalize(albums)
 
 albums_count = df_albums['total']
 print(Albums_count)
-# RETURNS: 
+# RETURNS:
 # 271
 
 album_id = df_albums['items'][0][3]['id']
@@ -91,10 +91,10 @@ album_total_tracks = df_albums['items'][0][3]['total_tracks']
 album_name = df_albums['items'][0][3]['name']
 album_release_date = df_albums['items'][0][3]['release_date']
 print(f"Album ID:{album_id}, Number of Tracks:{album_total_tracks}, Album Name:{album_name}, Release Date:{album_release_date}")
-# RETURNS: 
+# RETURNS:
 # Album ID:6ZvDJs17O3woQirttKRYCG, Number of Tracks:10, Album Name:Sick Boy, Release Date:2018-12-14
 ```
- 
+
 4. **get_album** gets Spotify catalog information for a single album.
 For syntax and input parameters, refer to Spotify's API endpoint reference [here](https://developer.spotify.com/documentation/web-api/reference/albums/get-album/).
 ```python
